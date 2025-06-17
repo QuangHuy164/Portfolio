@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
-import Island from '../models/Island'
+// import Island from '../models/Island'
 
       {/* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center"></div> */}
 
@@ -30,11 +30,11 @@ const Home = () => {
           <pointLight />
           <spotLight />
           <hemisphereLight skyColor='#b1e1ff' intensity={1} />
-          <Island 
+          {/* <Island 
             position = {radioPosition}
             scale = {radioScale}
             rotation = {radioRotation}
-          />
+          /> */}
           </Suspense>
       </Canvas>
     </section>
