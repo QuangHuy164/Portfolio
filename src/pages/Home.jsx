@@ -1,12 +1,12 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
-// import Island from '../models/Island'
+import Island from '../models/Island'
 
       {/* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center"></div> */}
 
 const Home = () => {
-  const adjustRadioForScreenSize = () => {
+  const adjustIslandForScreenSize = () => {
     let screenScale = null;
     let screenPosition = [10, -50.5, -70];
     let rotation = [0.1, 4.5, 0];
@@ -18,25 +18,27 @@ const Home = () => {
     }
     return [ screenScale, screenPosition, rotation]
   }
-  const [radioScale, radioPosition, radioRotation ] = adjustRadioForScreenSize()
+  const [islandScale, islandPosition, islandRotation ] = adjustIslandForScreenSize()
   return (
     <section className="w-full h-screen relative">
       <Canvas className="w-full h-fullscreen bg-transparent"
               camera={{ near: 0.1, far: 1000}}
-      >
+      > 
         <Suspense fallback={<Loader />}>
           <directionalLight position={[1,1,1]} intensity={10} />
           <ambientLight intensity={4} />
           <pointLight />
           <spotLight />
           <hemisphereLight skyColor='#b1e1ff' intensity={1} />
-          {/* <Island 
-            position = {radioPosition}
-            scale = {radioScale}
-            rotation = {radioRotation}
-          /> */}
+    
+         <Island 
+            position = {islandPosition}
+            scale = {islandScale}
+            rotation = {islandRotation}
+          /> 
           </Suspense>
-      </Canvas>
+       </Canvas> 
+      
     </section>
   );
 };
