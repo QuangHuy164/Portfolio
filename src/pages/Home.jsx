@@ -22,9 +22,24 @@ const Home = () => {
     return [ screenScale, screenPosition, rotation]
   }
   const [islandScale, islandPosition, islandRotation ] = adjustIslandForScreenSize()
+
+  const adjustPlaneForScreenSize = () => {
+    let screenScale = null;
+    let screenPosition = [0, -6.5, -43];
+    let rotation = [0.1, 4.7, 0];
+
+    if (window.innerWidth < 768) {
+      screenScale = [0.9, 0.9, 0.9]; 
+    } else {
+      screenScale = [1, 1, 1];
+    }
+    return [ screenScale, screenPosition, rotation]
+  }
+  const [planeScale, planePosition ] = adjustPlaneForScreenSize()
+  
   return (
     <section className="w-full h-screen relative">
-      <Canvas className="w-full h-fullscreen bg-transparent"
+      <Canvas className={`w-full h-fullscreen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}
               camera={{ near: 0.1, far: 1000}}
       > 
         <Suspense fallback={<Loader />}>
@@ -37,6 +52,8 @@ const Home = () => {
             position = {islandPosition}
             scale = {islandScale}
             rotation = {islandRotation}
+            isRotating = {isRotating}
+            setIsRotating = {setIsRotating}
           /> 
           <Plane />
           </Suspense>
