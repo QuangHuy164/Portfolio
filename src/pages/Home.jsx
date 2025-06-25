@@ -22,7 +22,7 @@ const Home = () => {
     return [ screenScale, screenPosition, rotation]
   }
   const [islandScale, islandPosition, islandRotation ] = adjustIslandForScreenSize()
-
+  const [currentState, setCurrentStage] = useState(1)
   const adjustPlaneForScreenSize = () => {
     let screenScale , screenPosition;
 
@@ -47,13 +47,16 @@ const Home = () => {
           <ambientLight intensity={0.5} />
           <hemisphereLight skyColor='#b1e1ff' intensity={1} />
           <Bird />
-        <Sky />
+        <Sky 
+          isRotating = {isRotating}
+        />
          <Island 
             position = {islandPosition}
             scale = {islandScale}
             rotation = {islandRotation}
             isRotating = {isRotating}
             setIsRotating = {setIsRotating}
+            setCurrentStage = {setCurrentStage}
           /> 
           <Plane
             planePosition = {planePosition}
