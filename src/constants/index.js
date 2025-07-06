@@ -139,14 +139,14 @@ export const projects = [
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
+        name: 'To-Do Application',
+        description: 'Created a full-stack To-Do application, enabling users to post, delete and edit tasks.',
         link: 'https://github.com/adrianhajdin/threads',
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
+        name: 'Workout Exercises Website',
         description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
         link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
     },
@@ -164,11 +164,4 @@ export const projects = [
         description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
         link: 'https://github.com/adrianhajdin/projects_realestate',
     },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
 ];
