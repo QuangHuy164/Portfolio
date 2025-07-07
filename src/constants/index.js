@@ -19,7 +19,12 @@ import {
     snapgram,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    radio,
+    check,
+    track,
+    workout,
+    blog
 } from "../assets/icons";
 
 export const skills = [
@@ -126,40 +131,38 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: track,
         theme: 'btn-back-red',
         name: 'Calories Tracker',
         description: 'Developed a web application that tracks and notifies users of calories changes, consumes for body, helping users find the best ways to macro their weight.',
         link: 'https://github.com/adrianhajdin/pricewise',
     },
     {
-        iconUrl: threads,
+        iconUrl: check,
         theme: 'btn-back-green',
         name: 'To-Do Application',
         description: 'Created a full-stack To-Do application, enabling users to post, delete and edit tasks.',
         link: 'https://github.com/adrianhajdin/threads',
     },
     {
-        iconUrl: car,
+        iconUrl: workout,
         theme: 'btn-back-blue',
         name: 'Workout Exercises Website',
         description: 'Designed and built a website for searching a best and suitable exercise for bodybuilders, sportsman using RapidAPI.',
         link: 'https://health-web-app-seven.vercel.app/',
     },
     {
-        iconUrl: snapgram,
+        iconUrl: radio,
         theme: 'btn-back-pink',
         name: 'Space Sound',
         description: 'Built an music application named Space Sound, allowing users to listen, replay and find their favorite songs.',
         link: 'https://github.com/adrianhajdin/social_media_app',
     },
     {
-        iconUrl: estate,
+        iconUrl: blog,
         theme: 'btn-back-black',
         name: 'My Blog',
         description: 'Built a personal blog for introducing myself, using NodeJS and ExpressJS that I just learned.',
         link: 'https://github.com/adrianhajdin/projects_realestate',
     },
-    {},
-    {}
 ];

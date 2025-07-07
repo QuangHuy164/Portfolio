@@ -26,6 +26,11 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import radio from './radio-outline.svg'
+import check from './checkmark-done-circle-outline.svg'
+import track from './analytics-outline.svg'
+import workout from './barbell-outline.svg'
+import blog from './clipboard-outline.svg'
 
 export {
     css,
@@ -55,5 +60,10 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    radio,
+    check,
+    track,
+    workout,
+    blog
 }
