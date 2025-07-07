@@ -132,8 +132,8 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
+        name: 'Calories Tracker',
+        description: 'Developed a web application that tracks and notifies users of calories changes, consumes for body, helping users find the best ways to macro their weight.',
         link: 'https://github.com/adrianhajdin/pricewise',
     },
     {
@@ -147,14 +147,14 @@ export const projects = [
         iconUrl: car,
         theme: 'btn-back-blue',
         name: 'Workout Exercises Website',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        description: 'Designed and built a website for searching a best and suitable exercise for bodybuilders, sportsman using RapidAPI.',
+        link: 'https://health-web-app-seven.vercel.app/',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
+        name: 'Space Sound',
+        description: 'Built an music application named Space Sound, allowing users to listen, replay and find their favorite songs.',
         link: 'https://github.com/adrianhajdin/social_media_app',
     },
     {
@@ -164,4 +164,6 @@ export const projects = [
         description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
         link: 'https://github.com/adrianhajdin/projects_realestate',
     },
+    {},
+    {}
 ];
