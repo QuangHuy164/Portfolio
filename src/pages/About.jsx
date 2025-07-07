@@ -22,7 +22,7 @@ const About = () => {
           technical education through hands-on learning and learning
           applications. I just graduated from university and am open to work. I
           have fundamental skills in front-end development and the basics of
-          NodeJS.{" "}
+          NodeJS.
         </p>
       </div>
       <div className="py-10 flex flex-col">
@@ -63,7 +63,7 @@ const About = () => {
                   <img 
                     src={experience.icon}
                     alt={experience.company_name}
-                    className="w-[60%] h-[60%] object-contain"
+                    className="w-[90%] h-[90%] object-contain"
                   />
                 </div>}
                 iconStyle={{background: experience.iconBg}}

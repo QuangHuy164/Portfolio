@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { dg } from "../assets/images";
 import {
     car,
     contact,
@@ -10,9 +10,6 @@ import {
     html,
     javascript,
     linkedin,
-    mongodb,
-    motion,
-    mui,
     nextjs,
     nodejs,
     pricewise,
@@ -20,7 +17,6 @@ import {
     redux,
     sass,
     snapgram,
-    summiz,
     tailwindcss,
     threads,
     typescript
@@ -98,8 +94,8 @@ export const experiences = [
     {
         title: "Internship",
         company_name: "Darkglass Electronics Oy",
-        icon: starbucks,
-        iconBg: "#accbe1",
+        icon: dg,
+        iconBg: "#000000",
         date: "June 2024 - September 2024",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
@@ -160,8 +156,8 @@ export const projects = [
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
+        name: 'My Blog',
+        description: 'Built a personal blog for introducing myself, using NodeJS and ExpressJS that I just learned.',
         link: 'https://github.com/adrianhajdin/projects_realestate',
     },
     {},
