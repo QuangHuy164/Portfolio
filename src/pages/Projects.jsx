@@ -32,6 +32,7 @@ const Projects = () => {
             </div>
             <div className="mt-5 flex flex-col">
               <h4 className="text-2xl font-poppins font-semibold">{project.name}</h4>
+              <h5 className="font-semibold text-red-500">{project.date}</h5>
               <p className="mt-2 text-slate-500">
                 {project.description}
               </p>

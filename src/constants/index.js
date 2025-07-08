@@ -1,9 +1,7 @@
 import { dg } from "../assets/images";
 import {
-    car,
     contact,
     css,
-    estate,
     express,
     git,
     github,
@@ -12,19 +10,17 @@ import {
     linkedin,
     nextjs,
     nodejs,
-    pricewise,
     react,
     redux,
     sass,
-    snapgram,
     tailwindcss,
-    threads,
     typescript,
     radio,
     check,
     track,
     workout,
-    blog
+    blog,
+    gmail
 } from "../assets/icons";
 
 export const skills = [
@@ -113,9 +109,9 @@ export const experiences = [
 
 export const socialLinks = [
     {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
+        name: 'Gmail',
+        iconUrl: gmail,
+        link: 'nghuy164@gmail.com',
     },
     {
         name: 'GitHub',
@@ -134,35 +130,41 @@ export const projects = [
         iconUrl: track,
         theme: 'btn-back-red',
         name: 'Calories Tracker',
+        date: 'July 2025 - 2025',
         description: 'Developed a web application that tracks and notifies users of calories changes, consumes for body, helping users find the best ways to macro their weight.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: check,
-        theme: 'btn-back-green',
-        name: 'To-Do Application',
-        description: 'Created a full-stack To-Do application, enabling users to post, delete and edit tasks.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: workout,
-        theme: 'btn-back-blue',
-        name: 'Workout Exercises Website',
-        description: 'Designed and built a website for searching a best and suitable exercise for bodybuilders, sportsman using RapidAPI.',
-        link: 'https://health-web-app-seven.vercel.app/',
+        link: 'https://github.com/QuangHuy164/CaloriesTracker',
     },
     {
         iconUrl: radio,
         theme: 'btn-back-pink',
         name: 'Space Sound',
+        date: 'July 2025 - 2025',
         description: 'Built an music application named Space Sound, allowing users to listen, replay and find their favorite songs.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        link: 'https://github.com/QuangHuy164/SoundPlayer',
     },
     {
         iconUrl: blog,
         theme: 'btn-back-black',
         name: 'My Blog',
+        date: 'July 2025 - 2025',
         description: 'Built a personal blog for introducing myself, using NodeJS and ExpressJS that I just learned.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        link: 'https://github.com/QuangHuy164/MyBlog',
+    },
+
+    {
+        iconUrl: workout,
+        theme: 'btn-back-blue',
+        name: 'Workout Exercises Website',
+        date: 'October 2024 - November 2024',
+        description: 'Designed and built a website for searching a best and suitable exercise for bodybuilders, sportsman using RapidAPI.',
+        link: 'https://health-web-app-seven.vercel.app/',
+    },
+    {
+        iconUrl: check,
+        theme: 'btn-back-green',
+        name: 'To-Do Application',
+        date: 'June 2024 - September 2024',
+        description: 'Created a full-stack To-Do application, enabling users to post, delete and edit tasks.',
+        link: 'https://github.com/QuangHuy164/IndecisionApp',
     },
 ];

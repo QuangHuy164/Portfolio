@@ -31,6 +31,7 @@ import check from './checkmark-done-circle-outline.svg'
 import track from './analytics-outline.svg'
 import workout from './barbell-outline.svg'
 import blog from './clipboard-outline.svg'
+import gmail from './gmail.png'
 
 export {
     css,
@@ -65,5 +66,6 @@ export {
     check,
     track,
     workout,
-    blog
+    blog,
+    gmail
 }

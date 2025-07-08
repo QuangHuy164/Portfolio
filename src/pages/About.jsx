@@ -3,7 +3,8 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { skills, experiences } from "../constants";
+import { Link } from "react-router-dom";
+import { skills, experiences, socialLinks } from "../constants";
 import CTA from "../components/CTA";
 
 const About = () => {
@@ -101,6 +102,37 @@ const About = () => {
         </div>
       </div>
       <hr className="border-slate-200"/>
+      <div className="py-16">
+        <h3 className="subhead-text">Other Links</h3>
+        </div>
+      <div className="mt-12 flex">
+          <VerticalTimeline>
+            {socialLinks.map((socialLink) => (
+              <VerticalTimelineElement
+                key={socialLink.name}
+                icon={<div className="flex justify-center items-center w-full h-full">
+                  <img 
+                    src={socialLink.iconUrl}
+                    alt={socialLink.name}
+                    className="w-[90%] h-[90%] object-contain"
+                  />
+                </div>}
+              >
+                <div>
+                  <h3 className="text-black text-xl font-poppins font-semibold">
+                    {socialLink.name}
+                  </h3>
+                  <Link to={socialLink.link}
+                    className="text-black-500 font-medium font-base"
+                    style={{ margin: 0 }}
+                  >
+                    {socialLink.link}
+                  </Link>  
+                </div>
+              </VerticalTimelineElement>
+            ))}
+          </VerticalTimeline>
+        </div>
       <CTA />
     </section>
   );
