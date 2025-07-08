@@ -122,7 +122,7 @@ const About = () => {
                   <h3 className="text-black text-xl font-poppins font-semibold">
                     {socialLink.name}
                   </h3>
-                  <Link to={socialLink.link}
+                  <Link to={socialLink.link} target="_blank" rel="noopener noreferrer"
                     className="text-black-500 font-medium font-base"
                     style={{ margin: 0 }}
                   >
