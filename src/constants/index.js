@@ -132,7 +132,7 @@ export const projects = [
         name: 'Calories Tracker',
         date: 'July 2025 - 2025',
         description: 'Developed a web application that tracks and notifies users of calories changes, consumes for body, helping users find the best ways to macro their weight.',
-        link: 'https://github.com/QuangHuy164/CaloriesTracker',
+        link: 'https://calories-tracker-livid.vercel.app/',
     },
     {
         iconUrl: radio,
